@@ -22,7 +22,7 @@ import { User } from './user.entity';
 import { AuthGuard } from '../guards/auth.guard';
 
 @Serialize(UserDto)
-@Controller('auth')
+@Controller('/auth')
 // Interceptor can also be wired up globally
 // @UseInterceptors(CurrentUserInterceptor)
 export class UsersController {
@@ -53,6 +53,7 @@ export class UsersController {
     const { email, password } = body;
     const user = await this.authService.signup(email, password);
     session.userId = user.id;
+    return user;
   }
 
   @Post('/signin')
