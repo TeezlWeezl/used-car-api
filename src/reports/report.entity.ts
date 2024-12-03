@@ -29,4 +29,7 @@ export class Report {
 
   @ManyToOne(() => User, (user) => user)
   user: User;
+
+  @Column({ default: false })
+  approved: boolean;
 }

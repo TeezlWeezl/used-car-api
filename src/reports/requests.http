@@ -12,3 +12,19 @@ Content-Type: application/json
   "lat": -11.71106,
   "mileage": 50000
 }
+
+### Approve one report
+PATCH http://localhost:3000/reports/approve/1
+Content-Type: application/json
+
+{
+  "approved": true
+}
+
+### Unapprove one report
+PATCH http://localhost:3000/reports/approve/1
+Content-Type: application/json
+
+{
+  "approved": false
+}
