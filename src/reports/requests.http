@@ -1,0 +1,14 @@
+### Testing the create function
+
+POST http://localhost:3000/reports
+Content-Type: application/json
+
+{
+  "price": 1000,
+  "make": "VW", 
+  "model": "Golf",
+  "year": 2019,
+  "lng": 28.10420,
+  "lat": -11.71106,
+  "mileage": 50000
+}
