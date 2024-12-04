@@ -7,7 +7,7 @@ import {
   Min,
 } from 'class-validator';
 
-export class CreateReportDTO {
+export class CreateReportDto {
   @Min(0)
   @Max(1000000)
   @IsNumber()
