@@ -4,13 +4,13 @@ POST http://localhost:3000/reports
 Content-Type: application/json
 
 {
-  "price": 1000,
-  "make": "VW", 
-  "model": "Golf",
-  "year": 2019,
-  "lng": 28.10420,
-  "lat": -11.71106,
-  "mileage": 50000
+  "price": 15000,
+  "make": "Toyota", 
+  "model": "Corolla",
+  "year": 1982,
+  "lng": 45,
+  "lat": 46,
+  "mileage": 20000
 }
 
 ### Approve one report
@@ -31,4 +31,4 @@ Content-Type: application/json
 
 ### Get an estimate for an existing vehicle
 
-GET http://localhost:3000/reports?make=toyota&model=corolla&lng=0&lat=0&mileage=2000&year=1980
+GET http://localhost:3000/reports?make=Toyota&model=Corolla&lng=44&lat=45&mileage=2000&year=1981
